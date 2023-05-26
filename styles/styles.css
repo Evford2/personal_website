@@ -172,16 +172,24 @@ header {
 }
 .about-container .left-about {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: auto 75%;
 }
 .about-container .left-about h4 {
   color: var(--color-secondary);
 }
+.about-container .left-about .labout1 {
+  min-width: 200px;
+}
 .about-container .left-about .labout2 {
   margin-top: 10px;
+  margin-left: 5px;
+}
+.about-container .left-about .labout3 {
+  min-width: 200px;
 }
 .about-container .left-about .labout4 {
   margin-top: 10px;
+  margin-left: 5px;
 }
 .about-container .right-about {
   display: flex;
@@ -215,6 +223,46 @@ header {
 .projects-container .proj3 {
   min-height: 200px;
   min-width: 300px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+.contact-container .leftcontact {
+  flex: 2;
+  max-width: 100px;
+}
+.contact-container .rightcontact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-container .rightcontact .input-control {
+  margin: 1.5rem 0;
+}
+.contact-container .rightcontact .input-control input, .contact-container .rightcontact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+.contact-container .rightcontact .ic2 {
+  display: flex;
+}
+.contact-container .rightcontact .ic2 :last-child {
+  margin-left: 1.5rem;
+}
+.contact-container .rightcontact .submit-btn {
+  display: flex;
+  justify-content: flex-start;
 }
 
 section {
@@ -329,8 +377,8 @@ section {
 .contactcontrols {
   position: fixed;
   z-index: 10;
-  top: 25%;
-  left: 50%;
+  top: 50%;
+  left: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
