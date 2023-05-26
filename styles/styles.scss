@@ -100,19 +100,24 @@ header{
             font-size: 3rem;
             span{
                 color: var(--color-secondary);
+                span{
+                    color: #6c7983;
+                }
             }
             p{
+                font-size: 1rem;
                 margin-top: 38px;
             }
         }
         p{
             margin: .2rem 0 0 5px;
-            font-size: 1rem;
+            font-size: 1.9rem;
         }
     
     }
 }
 .btn-con{
+    margin-top: 200px;
    display: flex; 
    align-self: flex-start;
 }
@@ -164,17 +169,56 @@ header{
     padding-top: 3.5rem;
     padding-bottom: 5rem;
     .left-about{
-        justify-content: center;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        .min-content{
-            width: min-content;
+        grid-template-columns: 25% 75%;
+        h4{
+            color: var(--color-secondary);
+        }
+        .labout2{
+            margin-top: 10px;
+        }
+        .labout4{
+            margin-top: 10px;
         }
     }
     .right-about{
+        display: flex;
+        align-self: flex-start;
+        flex-direction: column;
+        h4{
+            color: var(--color-secondary);
+        }
+        .rabout2{
+            margin-top: 100px;
+            margin-left: 35%;
+            display: flex;
+        }
        text-align: center;
     }
 }
+.projects-container{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    .proj1{
+        min-height: 200px;
+        min-width: 300px;
+    }
+    .proj2{
+        min-height: 200px;
+        min-width: 300px;
+    }
+    .proj3{
+        min-height: 200px;
+        min-width: 300px;
+    }
+}
+.contact-container{
+    
+    
+}
+
 section{
     min-height: 100vh;
     width: 100%;
@@ -280,6 +324,34 @@ section{
         justify-content: center;
         align-items: center;
         margin: 0 .7rem;
+        box-shadow: var(--box-shadow-1);
+        i{
+            font-size: 1.2rem;
+            color: var(--color-grey-2);
+        }
+    }
+}
+.contactcontrols{
+    position: fixed;
+    z-index: 10;
+    top: 25%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    .control{
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-grey-4);
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: .7rem 0;
         box-shadow: var(--box-shadow-1);
         i{
             font-size: 1.2rem;
