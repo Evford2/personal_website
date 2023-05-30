@@ -166,11 +166,13 @@ header{
 .about-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
     padding-top: 3.5rem;
     padding-bottom: 5rem;
     .left-about{
         display: grid;
         grid-template-columns: auto 75%;
+        flex-wrap: wrap;
         
         h4{
             color: var(--color-secondary);
