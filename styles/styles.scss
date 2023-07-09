@@ -98,6 +98,8 @@ header{
         .name{
             display: flex;
             font-size: 3rem;
+            height: 70%;
+            width: 68%;
             span{
                 color: var(--color-secondary);
                 span{
@@ -192,6 +194,12 @@ header{
             margin-left: 5px;
         }
     }
+    @media (max-width: 800px) {
+        .left-about {
+            display: flex;
+            flex-direction: column;
+        }
+    }
     .right-about{
         display: flex;
         align-self: flex-start;
@@ -214,19 +222,20 @@ header{
 .projects-container{
     margin-top: 5%;
     display: grid;
+    gap: 5px;
     grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
-    .proj1{
+    .project{
         min-height: 200px;
         min-width: 300px;
+        border: 2px;
+        border-color: white;
+        border-style: solid;
     }
-    .proj2{
-        min-height: 200px;
-        min-width: 300px;
-    }
-    .proj3{
-        min-height: 200px;
-        min-width: 300px;
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 .contact-container{
@@ -301,7 +310,9 @@ section{
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
-    
+    @media (max-width: 800px){
+        padding: 0;
+    }
 }
 
 .sec4{
@@ -348,7 +359,7 @@ section{
     
 }
 
-.controls{
+.controls-container{
     position: fixed;
     z-index: 10;
     top: 5%;
@@ -381,6 +392,11 @@ section{
             font-size: 1.2rem;
             color: var(--color-grey-2);
         }
+    }
+    @media (max-width:800px) {
+        
+        left: 26%;
+        
     }
 }
 .contactcontrols{
