@@ -1,6 +1,7 @@
 const sections = document.querySelectorAll('.section');
 const sectbtns = document.querySelectorAll('.controls');
 const sectbtn = document.querySelectorAll('.control');
+const portbtn = document.querySelectorAll(".portbtn");
 const allSections = document.querySelectorAll('.main-content')[0];
 
 function PageTransitions(){
@@ -12,11 +13,19 @@ function PageTransitions(){
             this.className += ' active-btn';
         })
     }
+    portbtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+          console.log('Clicked!');
+        });
+      });
+
 
     //sections active class
     allSections.addEventListener('click',(e) =>{
         console.log(e.target);
         const id = e.target.dataset.id;
+        
+        console.log(id);
         if(id){
             //remove active tag from other buttons
             sectbtns.forEach((btn) =>{
