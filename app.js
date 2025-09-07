@@ -13,11 +13,7 @@ function PageTransitions(){
             this.className += ' active-btn';
         })
     }
-    portbtn.forEach(btn => {
-        btn.addEventListener('click', () => {
-          console.log('Clicked!');
-        });
-      });
+ 
 
 
     //sections active class
