@@ -60,7 +60,6 @@ header {
 }
 .header-content .left-header {
   display: flex;
-  align-items: center;
   position: relative;
 }
 .header-content .left-header .h-shape {
@@ -97,9 +96,10 @@ header {
 }
 .header-content .right-header .name {
   display: flex;
-  font-size: 3rem;
-  height: 70%;
-  width: 68%;
+  font-size: 2rem;
+  height: auto;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 .header-content .right-header .name span {
   color: var(--color-secondary);
@@ -244,7 +244,6 @@ header {
 }
 .contact-container .rightcontact {
   flex: 3;
-  margin-left: 3rem;
 }
 .contact-container .rightcontact .input-control {
   margin: 1.5rem 0;

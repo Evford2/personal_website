@@ -18,6 +18,9 @@ function PageTransitions(){
 
     //sections active class
     allSections.addEventListener('click',(e) =>{
+        if(e.target.id === 'submit'){
+            return;
+        }
         console.log(e.target);
         const id = e.target.dataset.id;
         

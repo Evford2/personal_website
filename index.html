@@ -105,16 +105,29 @@
             </div>
             <div class="projects-container">
                 <div class="proj1 project">
-                    <h4>Ecommerce App</h4>
+                    <h4>Personal Website</h4>
+                    <p>You are looking at it! This website displays some
+                       information about me and displays some of my work. It
+                       is built using JavaScript, html, and CSS! View it on my GitHub 
+                       to see my code!
+                    </p>
                 </div>
                 <div class="proj2 project">
-                    <h4>Restaurant Reservation</h4>
+                    <h4>Campsite Reservation</h4>
+                    <p>This React application showcases some of my backend skills
+                        Using MongoDB as the database and Express.js/Node.js as the back end. It utilizes
+                        and API to fetch campsite information from the database. It is still a work in progress.
+                    </p>
                 </div>
                 <div class="proj3 project">
                     <h4>Infernal Ring</h4>
+                    <p>This is an awesome project that I worked on in my game development course.
+                       We built a full fledged 2-D fighter game in Unity. Everything was made from scratch, including the 
+                       artwork and soundtracks. 
+                    </p>
                 </div>
                 <div class="proj4 project">
-                    <h4>Personal Website</h4>
+                    <h4>Trivia Website</h4>
                 </div>
             </div>
         </section>
@@ -135,13 +148,12 @@
                     </div>
                 </div>
                 <div class="rightcontact">
-                    <form action="" class="contact-form">
-                        <div class="input-control ic2">
+                    <form onsubmit = "sendEmail(); reset(); return false;" action="" class="contact-form">
+                        <div class="input-control">
                             <input type="text" required placeholder="Your Name">
-                            <input type="email" required placeholder="Your Email">
                         </div>
                         <div class="input-control">
-                            <input type="text" required placeholder="Enter Subject">
+                            <input type="text" id="Email" placeholder="Email">
                         </div>
                         <div class="input-control">
                             <textarea name="" id="" cols="15" rows="8" placeholder="Write Message Here..."></textarea>
@@ -156,6 +168,22 @@
                         </div>
                     </form>
                 </div>
+                <script>src="https://smtpjs.com/v3/smtp.js"</script>
+                <script>
+                    function sendEmail(){
+                        Email.send({
+                            Host : "smtp.gmail.com",
+                            Username : "evanford28@gmail.com",
+                            Password : "Enter2day1128!",
+                            To : 'evanford28@gmail.com',
+                            From : document.getElementById("Email").value,
+                            Subject : "This is the subject",
+                            Body : "And this is the body"
+                        }).then(
+                            message => alert(message)
+                        );
+                    }
+                </script>
             </div>
         </section>
     </main>
